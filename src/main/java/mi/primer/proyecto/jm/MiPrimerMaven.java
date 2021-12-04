@@ -6,8 +6,8 @@ import java.util.List;
 public class MiPrimerMaven {
 
 	public static void main(String[] args) {
-System.out.println("Hola Mundo");
-List<Object> cv = new ArrayList<>();
+		System.out.println("Hola Mundo");
+		List<Object> cv = new ArrayList<>();
 	}
 
 }
