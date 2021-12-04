@@ -13,6 +13,7 @@ public class Matricula {
 		Direccion direccion = new Direccion();
 		direccion.setCallePrincipal(calle);
 		direccion.setNumeracion(numero);
+		
 
 		this.estudiante.setDireccion(direccion);
 
