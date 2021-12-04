@@ -9,16 +9,16 @@ public class MainUce {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Ingrese nombre");
 		String nombre = scanner.nextLine();
-		
+
 		System.out.println("Ingrese apellido");
 		String apellido = scanner.nextLine();
-		
+
 		System.out.println("Ingrese calle");
 		String calle = scanner.nextLine();
-		
+
 		System.out.println("Ingrese numeracion");
 		String numeracion = scanner.nextLine();
-		
+
 		Matricula matricula = new Matricula();
 		matricula.setAnio(2015);
 
