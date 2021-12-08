@@ -1,13 +1,13 @@
-package com.edu.ec.dependencias;
+package com.ece.edu.inyeccion.dependencias;
 
 import java.util.Scanner;
 
-public class MainUce {
 
+public class MainFramework {
+	
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		Scanner scannerInt = new Scanner(System.in);
 		System.out.println("Ingrese nombre");
 		String nombre = scanner.nextLine();
 
@@ -19,16 +19,13 @@ public class MainUce {
 
 		System.out.println("Ingrese numeracion");
 		String numeracion = scanner.nextLine();
-		
-		System.out.println("Ingrese tipo");
-		int tipo = scannerInt.nextInt();
 
-		Matricula matricula = new Matricula();
+		Matricula matricula = new Matricula(new Estudiante(), new Direccion());
 		matricula.setAnio(2015);
 
 		matricula.setSemestre("Sexto");
 
-		String mensaje = matricula.matricular(nombre, apellido, calle, numeracion, tipo);
+		String mensaje = matricula.matricular(nombre, apellido, calle, numeracion);
 		System.out.println(mensaje);
 
 	}

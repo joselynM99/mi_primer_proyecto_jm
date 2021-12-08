@@ -1,34 +1,25 @@
-package com.edu.ec.dependencias;
+package com.ece.edu.inyeccion.dependencias;
 
 public class Matricula {
 	private String semestre;
 	private int anio;
 	private Estudiante estudiante;
+	private Direccion direccion;
+	
+	public Matricula(Estudiante estudiante,Direccion direccion) {
+		this.estudiante= estudiante;
+		this.direccion= direccion;
+	}
 
-	public String matricular(String nombre, String apellido, String calle, String numero,int tipo) {
+	public String matricular(String nombre, String apellido, String calle, String numero) {
 		
-		if(tipo==1) {
-			
-			this.estudiante = new EstudianteOdontologia();
-		}else if(tipo==2){
-			this.estudiante = new EstudianteArquitectura();
-		}else if(tipo==3){
-			this.estudiante = new EstudianteAdministracion();
-		}else {
-			this.estudiante = new Estudiante();
-		}
-		// JVM: heap
 		this.estudiante.setNombre(nombre);
 		this.estudiante.setApellido(apellido);
-
-		Direccion direccion = new Direccion();
-		direccion.setCallePrincipal(calle);
-		direccion.setNumeracion(numero);
-
+		
+		this.direccion.setCallePrincipal(calle);
+		this.direccion.setNumeracion(numero);
+		
 		this.estudiante.setDireccion(direccion);
-
-		// logica para guardar en la base de datos los datos de la materia
-		// y el estudiante
 		
 		System.out.println(this.estudiante);
 		
@@ -62,5 +53,15 @@ public class Matricula {
 	public void setAnio(int anio) {
 		this.anio = anio;
 	}
+
+	public Direccion getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(Direccion direccion) {
+		this.direccion = direccion;
+	}
+	
+	
 
 }

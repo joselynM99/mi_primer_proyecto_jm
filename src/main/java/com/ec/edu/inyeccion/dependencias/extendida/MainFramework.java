@@ -1,10 +1,15 @@
-package com.edu.ec.dependencias;
+package com.ec.edu.inyeccion.dependencias.extendida;
 
 import java.util.Scanner;
 
-public class MainUce {
 
+
+
+
+public class MainFramework {
+	
 	public static void main(String[] args) {
+
 
 		Scanner scanner = new Scanner(System.in);
 		Scanner scannerInt = new Scanner(System.in);
@@ -22,13 +27,26 @@ public class MainUce {
 		
 		System.out.println("Ingrese tipo");
 		int tipo = scannerInt.nextInt();
+		
+		Estudiante estudiante;
+		
+		if(tipo==1) {
+			estudiante = new Estudiante();
+		}else if(tipo==2) {
+			estudiante = new EstudianteOdontologia();
+		}else if(tipo==3){
+			estudiante = new EstudianteArquitectura();
+		}else {
+			estudiante = new EstudianteAdministracion();
+		}
 
-		Matricula matricula = new Matricula();
+		Matricula matricula = new Matricula(estudiante, new Direccion());
 		matricula.setAnio(2015);
+
 
 		matricula.setSemestre("Sexto");
 
-		String mensaje = matricula.matricular(nombre, apellido, calle, numeracion, tipo);
+		String mensaje = matricula.matricular(nombre, apellido, calle, numeracion);
 		System.out.println(mensaje);
 
 	}
