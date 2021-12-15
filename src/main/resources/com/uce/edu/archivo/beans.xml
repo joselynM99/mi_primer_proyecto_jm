@@ -23,8 +23,8 @@
 		<constructor-arg value="22"></constructor-arg>
 	</bean>
 	
-	<bean id="estudiante"
-		class="joselyn.moncayo.Estudiante">
+	<bean id="paciente"
+		class="joselyn.moncayo.Paciente">
 		<constructor-arg value="Joselyn"></constructor-arg>
 		<constructor-arg value="Moncayo"></constructor-arg>
 		<constructor-arg value="22"></constructor-arg>

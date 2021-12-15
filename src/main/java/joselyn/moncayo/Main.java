@@ -11,8 +11,8 @@ public class Main {
 		
 		System.out.println(profesor.getNombre()+" "+profesor.getApellido()+" "+profesor.getProfesion()+" "+profesor.getUniversidad());
 
-		Estudiante estu= (Estudiante) app.getBean("estudiante");
-		System.out.println(estu.getNombre()+" "+estu.getApellido()+" "+estu.getEdad());
+		Paciente pc= (Paciente) app.getBean("paciente");
+		System.out.println(pc.getNombre()+" "+pc.getApellido()+" "+pc.getEdad());
 
 	}
 

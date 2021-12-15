@@ -1,14 +1,14 @@
 package joselyn.moncayo;
 
-public class Estudiante {
+public class Paciente {
 	private String nombre;
 	private String apellido;
 	private int edad;
 	
-	public Estudiante() {
+	public Paciente() {
 		
 	}
-	public Estudiante(String nombre, String apellido, int edad) {
+	public Paciente(String nombre, String apellido, int edad) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
