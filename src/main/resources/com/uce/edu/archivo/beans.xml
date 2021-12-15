@@ -3,6 +3,40 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="cuenta"
+		class="com.ec.inyeccion.dependencias.framework.Cuenta">
+		<property name="numero" value="131299"></property>
+		<property name="saldo" value="100"></property>
+	</bean>
+
+	<bean id="cuenta1"
+		class="com.ec.inyeccion.dependencias.framework.Cuenta">
+		<property name="numero" value="251299"></property>
+		<property name="saldo" value="23"></property>
+	</bean>
+
+	<bean id="estu"
+		class="com.ec.inyeccion.dependencias.framework.Estudiante">
+		<constructor-arg value="Joselyn"></constructor-arg>
+		<constructor-arg value="Moncayo"></constructor-arg>
+		<constructor-arg value="22"></constructor-arg>
+	</bean>
+	
+	<bean id="estudiante"
+		class="joselyn.moncayo.Estudiante">
+		<constructor-arg value="Joselyn"></constructor-arg>
+		<constructor-arg value="Moncayo"></constructor-arg>
+		<constructor-arg value="22"></constructor-arg>
+	</bean>
+	
+	<bean id="profesor"
+		class="joselyn.moncayo.Profesor">
+		<constructor-arg value="Edison"></constructor-arg>
+		<constructor-arg value="Cayambe"></constructor-arg>
+		<constructor-arg value="Ingeniero"></constructor-arg>
+		<constructor-arg value="UCE"></constructor-arg>
+	</bean>
+
 
 </beans>
