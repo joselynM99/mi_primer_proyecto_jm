@@ -9,10 +9,10 @@ public class Main {
 		ApplicationContext app = new ClassPathXmlApplicationContext("com/uce/edu/archivo/beans.xml");
 		Profesor profesor = (Profesor) app.getBean("profesor");
 		
-		System.out.println(profesor.getNombre()+" "+profesor.getApellido()+" "+profesor.getProfesion()+" "+profesor.getUniversidad());
+		System.out.println("profesor "+profesor.getNombre()+" "+profesor.getApellido()+" "+profesor.getProfesion()+" "+profesor.getUniversidad());
 
 		Paciente pc= (Paciente) app.getBean("paciente");
-		System.out.println(pc.getNombre()+" "+pc.getApellido()+" "+pc.getEdad());
+		System.out.println("paciente "+pc.getNombre()+" "+pc.getApellido()+" "+pc.getEdad());
 
 	}
 
