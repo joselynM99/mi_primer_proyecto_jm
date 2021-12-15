@@ -14,6 +14,7 @@ com\edu\ec\dependencias\Estudiante.class
 com\edu\ec\dependencias\MainUce.class
 com\ec\edu\inyeccion\dependencias\tipos\GestorCuentas.class
 com\ec\edu\inyeccion\dependencias\extendida\Matricula.class
+com\ec\inyeccion\dependencias\framework\Main.class
 com\ec\edu\inyeccion\dependencias\tipos\CuentaCorriente.class
 com\ec\edu\inyeccion\dependencias\tipos\MainFramework$1.class
 com\ec\edu\tarea1\MainFramework.class
@@ -25,10 +26,12 @@ com\ec\edu\inyeccion\dependencias\tipos\ICuenta.class
 com\edu\ec\dependencias\EstudianteAdministracion.class
 com\ec\edu\inyeccion\dependencias\tipos\CuentaAhorros.class
 com\ec\edu\tarea1\GestorCuenta.class
+com\ec\mi\parte\Animal.class
 com\ec\edu\tarea1\CuentaAhorros.class
 com\ec\edu\inyeccion\dependencias\extendida\EstudianteOdontologia.class
 com\ece\edu\inyeccion\dependencias\Estudiante.class
 mi\primer\proyecto\jm\Animal.class
+com\ec\inyeccion\dependencias\framework\Cuenta.class
 com\ec\edu\inyeccion\dependencias\tipos\CuentaFuturo.class
 mi\primer\proyecto\jm\MiPrimerMaven.class
 com\ec\edu\inyeccion\dependencias\extendida\EstudianteAdministracion.class

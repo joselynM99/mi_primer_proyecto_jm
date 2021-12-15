@@ -5,4 +5,19 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<bean id= "paci" 
+    	class = "kenlly.chacon.Paciente">
+    	<constructor-arg value="Kenlly"></constructor-arg>
+    	<constructor-arg value="Chacon"></constructor-arg>
+    	<constructor-arg value="32"></constructor-arg>
+    </bean>
+    
+    <bean id= "pro" 
+    	class = "kenlly.chacon.Profesor">
+    	<constructor-arg value="Lenin"></constructor-arg>
+    	<constructor-arg value="Galarza"></constructor-arg>
+    	<constructor-arg value="Informatico"></constructor-arg>
+    	<constructor-arg value="UCE"></constructor-arg>
+    </bean>
+
 </beans>
